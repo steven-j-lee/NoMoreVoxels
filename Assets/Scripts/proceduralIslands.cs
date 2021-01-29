@@ -20,7 +20,7 @@ public class proceduralIslands : MonoBehaviour
 
     private Vector3 randomPosition()
     {
-        return new Vector3(Random.Range(-1000f, 1000f), Random.Range(-200f, 200f), Random.Range(-1000f, 1000f));
+        return new Vector3(Random.Range(-1000f, 1000f), Random.Range(-500f, 500f), Random.Range(-1000f, 1000f));
 
     }
 

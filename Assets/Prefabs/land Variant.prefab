@@ -25,12 +25,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0617b4330ee52ed449167c71882e2428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   cubeSize: 0.3
   cubesInRow: 5
   explosionForce: 80
   explosionRadius: 5
   explosionUpward: 0.4
   newMaterial: {fileID: 2100000, guid: f15a7d7e6e568424984afa895180e8d3, type: 2}
+  playerShoot: {fileID: 3820516706127212077, guid: f4bf32d2a121abb48a5f8d6c15107b4d, type: 3}
+  shipController: {fileID: 6465523776418361151, guid: f4bf32d2a121abb48a5f8d6c15107b4d, type: 3}
 --- !u!1001 &1148748164092842692
 PrefabInstance:
   m_ObjectHideFlags: 0

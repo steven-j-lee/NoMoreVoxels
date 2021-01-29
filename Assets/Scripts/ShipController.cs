@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,14 +13,25 @@ public class ShipController : MonoBehaviour
     public float smoothSpeed = 3;
     public float smoothTurnSpeed = 3;
 
+    public bool isGameOver;
+
     Vector3 velocity;
     float yawVelocity;
     float pitchVelocity;
     float currentSpeed;
-
+    
+    //variables for the player score
+    public int playerScore;
 
     //debug
     private Quaternion initialRotation = new Quaternion(0f, 0f, 0f, 0f);
+
+    private void Awake()
+    {
+        isGameOver = false;
+        playerScore = 0;
+    }
+
     void Start()
     {
         currentSpeed = maxSpeed;

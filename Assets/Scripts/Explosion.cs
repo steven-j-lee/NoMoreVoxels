@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Explosion : MonoBehaviour {
+public class Explosion : MonoBehaviour
+{
     //public variables
     public float cubeSize = 0.2f;
     public int cubesInRow = 5;
@@ -14,6 +15,11 @@ public class Explosion : MonoBehaviour {
 
     //new material
     [SerializeField] Material newMaterial;
+    
+    //get bullet
+    [SerializeField] private PlayerShoot playerShoot;
+    //player
+    [SerializeField] private ShipController shipController;
 
     void Start() 
     {
@@ -30,10 +36,20 @@ public class Explosion : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) 
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Bullet")
         {
+            //update player score
+            GameObject.FindGameObjectWithTag("Player").GetComponent<ShipController>().playerScore += 50;
             //call explode
             explode();
+            Destroy(playerShoot.bulletBody);
+        }
+
+        if (other.gameObject.tag == "Player")
+        {
+            other.GetComponent<ShipController>().enabled = false;
+            other.GetComponent<ShipController>().isGameOver = true;
+            other.GetComponent<PlayerShoot>().enabled = false;
         }
 
     }
@@ -81,8 +97,17 @@ public class Explosion : MonoBehaviour {
         piece.GetComponent<Renderer>().material = newMaterial;
         piece.AddComponent<Rigidbody>();
         piece.GetComponent<Rigidbody>().mass = cubeSize;
-       
+        //delay();
+        //destroy object to free up space
+        Destroy(piece, 5);
 
+
+    }
+
+    IEnumerator delay()
+    {
+        yield return new WaitForSeconds(10);
+        
     }
 
 }
