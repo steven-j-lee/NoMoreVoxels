@@ -10,16 +10,20 @@
           <e p="unlitSphere.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="bunny.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
+          <e p="EnemyFactory.cs" t="Include" />
           <e p="EnemyManager.cs" t="Include" />
           <e p="Explosion.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="IFactory.cs" t="Include" />
           <e p="LogoHover.cs" t="Include" />
           <e p="PerlinGenerator.cs" t="Include" />
           <e p="PlayerShoot.cs" t="Include" />
           <e p="proceduralIslands.cs" t="Include" />
           <e p="ProceduralPerlin.cs" t="Include" />
           <e p="ShipController.cs" t="Include" />
+          <e p="Spawn.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

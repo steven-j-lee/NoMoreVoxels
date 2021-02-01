@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -60,6 +61,11 @@ public class GameManager : MonoBehaviour
             gameOver.SetActive(true);
             gameOver.transform.position = ship.transform.position;
 
+        }
+        
+        if(Input.GetKeyDown(KeyCode.R) && shipController.isGameOver)
+        {
+            SceneManager.LoadScene(0);
         }
         
         //update score
