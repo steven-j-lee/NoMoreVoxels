@@ -6,3 +6,6 @@ It is currently at a completed build, but I am planning on adding boss features 
 
 Feel free to try the game out.
 
+TODO:
+implement object pooling
+enemy behaviour
