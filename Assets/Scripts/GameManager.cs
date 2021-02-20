@@ -58,6 +58,7 @@ public class GameManager : MonoBehaviour
         if (shipController.isGameOver)
         {
             //Debug.Log("Game Over");
+            shipController.enabled = false;
             gameOver.SetActive(true);
             gameOver.transform.position = ship.transform.position;
 

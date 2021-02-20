@@ -8,12 +8,17 @@ public class Spawn : MonoBehaviour
     private int counter;
     [SerializeField] private EnemyFactory boxFactory;
 
+    public int enemyCounter
+    {
+        get { return counter; }
+        set { counter = value; }
+    }
     private void Awake()
     {
         counter = 0;
     }
 
-    void Start()
+    void Start() 
     {
         
     }
@@ -23,7 +28,7 @@ public class Spawn : MonoBehaviour
         while(enemyOnScreenNum > counter)
         {
             var instance = boxFactory.Spawn();
-            Vector3 randomPosition = new Vector3(Random.Range(-300f, 300f), Random.Range(-200f,200f), Random.Range(-500f, 500f));
+            Vector3 randomPosition = new Vector3(Random.Range(-1000f, 1000f), Random.Range(-1000f,1000f), Random.Range(-1000f, 1000f));
             instance.transform.position = randomPosition;
 
             counter++;

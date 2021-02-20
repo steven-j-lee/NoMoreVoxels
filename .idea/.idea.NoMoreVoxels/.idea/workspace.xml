@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b55784-83fb-4c92-8767-6ede1b11cb0c" name="Default Changelist" comment="" />
+    <list default="true" id="c2b55784-83fb-4c92-8767-6ede1b11cb0c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NoMoreVoxels/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NoMoreVoxels/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/voxelinstanced.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/voxelinstanced.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bunny (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bunny (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/bunny.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/bunny.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,10 +37,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerShoot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Explosion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/IFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyFactory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawn.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/bunny.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nh4JGCIzp9xDogTAjmgybfC7GQ" />
@@ -78,7 +87,8 @@
       <updated>1611828919391</updated>
       <workItem from="1611828945977" duration="966000" />
       <workItem from="1611867168384" duration="12137000" />
-      <workItem from="1612216583088" duration="5870000" />
+      <workItem from="1612216583088" duration="7110000" />
+      <workItem from="1613849748008" duration="2535000" />
     </task>
     <servers />
   </component>

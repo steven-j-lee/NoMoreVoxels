@@ -1674,7 +1674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4fa997ed09a09643b23cedb515a0f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyOnScreenNum: 20
+  enemyOnScreenNum: 30
   boxFactory: {fileID: 1637694937}
 --- !u!4 &1019561448
 Transform:
